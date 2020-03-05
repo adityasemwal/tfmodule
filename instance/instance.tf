@@ -2,7 +2,7 @@ data "aws_ami" "amazon2"{
   most_recent = true
   filter{
     name = "name"
-    values = ["Amazon Linux 2 AMI*"]
+    values = ["amzn2-ami-hvm*"]
   }
   filter{
     name = "virtualization-type"
