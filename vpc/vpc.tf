@@ -43,3 +43,7 @@ resource "aws_route_table_association" "test-public-1"{
 output "subnet_ids"{
   value = [aws_subnet.test-public-1.id]
 }
+
+output "vpc_id"{
+  value = [aws_vpc.main.id]
+}
