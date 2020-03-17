@@ -20,7 +20,7 @@ resource "aws_instance" "my-instance"{
   ami = data.aws_ami.amazon2.id
   instance_type = var.AWS_INSTANCE
   subnet_id = var.subnet_ids
-  security_group = aws_security_group.allow-ssh.id
+  vpc_security_group_ids = [aws_security_group.allow-ssh.id]
   tags = {
     Name = "Terraform"
   }
