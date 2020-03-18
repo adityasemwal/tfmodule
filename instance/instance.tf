@@ -17,7 +17,7 @@ data "aws_ami" "amazon2"{
 
 resource "aws_instance" "my-instance"{
   count = var.COUNT ? 1 : 0
-  ami = var.amifrom ? var.AMI : data.aws_ami.amazon2.id
+  ami = var.amiFrom ? var.AMI : data.aws_ami.amazon2.id
   instance_type = var.AWS_INSTANCE
   subnet_id = var.subnet_id_1
   key_name = aws_key_pair.mykeypair.key_name
