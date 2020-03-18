@@ -2,7 +2,7 @@ variable "COUNT"{}
 variable "AWS_INSTANCE"{
   default = "t2.micro"
 }
-variable "subnet_ids"{}
+variable "subnet_id_1"{}
 variable "vpc_id"{}
 variable "ports"{
   type = map(list(string))

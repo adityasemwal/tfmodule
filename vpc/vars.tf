@@ -9,3 +9,11 @@ variable "SUB_1_CIDR"{
 variable "AZ_1"{
   default = "us-west-1b"
 }
+
+variable "SUB_2_CIDR"{
+  default = "10.0.2.0/24"
+}
+
+variable "AZ_2"{
+  default = "us-west-1c"
+}
