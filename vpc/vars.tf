@@ -15,5 +15,5 @@ variable "SUB_2_CIDR"{
 }
 
 variable "AZ_2"{
-  default = "us-west-1c"
+  default = "us-west-1a"
 }
