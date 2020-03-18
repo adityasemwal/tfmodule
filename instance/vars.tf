@@ -11,3 +11,7 @@ variable "ports"{
     8080 = ["0.0.0.0/0"]
   }
 }
+variable "amiFrom"{
+  default = false
+}
+variable "AMI"{}
